@@ -8,7 +8,8 @@ The folder structure is arranged like this:
 ```
 .
 ├── data
-│   ├── ecg
+│   ├── a-large-scale-12-lead-electrocardiogram-database-for-arrhythmia-study-1.0.0
+│   ├── WFDBRecords
 │   └── diagnoses.csv
 └── model.ipynb
 ```
