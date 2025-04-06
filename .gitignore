@@ -1,4 +1,4 @@
-data/*
+data/ecg/*
 
 # Python-generated files
 __pycache__/
