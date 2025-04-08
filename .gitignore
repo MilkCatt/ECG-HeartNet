@@ -1,6 +1,9 @@
 data/ecg/*
+data/a-large-scale-12-lead-electrocardiogram-database-for-arrhythmia-study-1.0.0
+data/WFDBRecords
 
 # Python-generated files
+*.DS_Store
 __pycache__/
 *.py[oc]
 build/
