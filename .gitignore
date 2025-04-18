@@ -1,4 +1,5 @@
 data/ecg/*
+data/ecg_clipped/*
 data/a-large-scale-12-lead-electrocardiogram-database-for-arrhythmia-study-1.0.0
 data/WFDBRecords
 data/ecg_clipped/*
