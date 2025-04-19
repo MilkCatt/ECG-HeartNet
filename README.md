@@ -22,12 +22,21 @@ The folder structure should be arranged like this:
 ```
 
 ## Codebase Summary
+
 **archive** - This folder contains old code testing files and previous iterations
+\n
 **data** - This folder contains the 12-lead data (ecg & ecg_clipped) as well as the master sheets containing a directory of the 12-lead data which the model reads from (diagnoses_10.csv, diagnoses_balanced.csv, etc.)
+\n
 **metadata** - This folder contains the mean and standard deviation of each of the 12-leads.
+\n
 **scripts** - This folder contains all the scripts used for data preprocessing, cleaning, and visualisation.
+\n
 **training_progress** - This folder contains model params and histories across the different iterations of our models.
+\n
 *models.py* - This file contains the model objects used
+\n
 *objects.py* - This file contains data-related objects
+\n
 *run.ipynb* - This is the main file which the model can be run from
+\n
 *utils.py* - This file contains additional helper functions 
