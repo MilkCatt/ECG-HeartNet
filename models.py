@@ -33,10 +33,10 @@ class ECGTransformer(nn.Module):
         return result
     
 class ECGEmbeddings_old(nn.Module):
-    def __init__(self, d_input, d_model, n_conv_layers=8):
+    def __init__(self, d_input, d_model, n_conv_layers=8, window_size=51):
         super().__init__()
         self.conv_layers = nn.ModuleList([
-            nn.Conv1d(d_model if i>0 else d_input, d_model, 51, stride=1, padding='same')
+            nn.Conv1d(d_model if i>0 else d_input, d_model, window_size, stride=1, padding='same')
             for i in range(n_conv_layers)
         ])
         self.activation = nn.ReLU(inplace=False)  # Important for checkpointing
