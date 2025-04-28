@@ -20,6 +20,7 @@ class NormalizeECG:
     
 class ECGDataset(Dataset):
     def __init__(self, path="data/ecg", diagnoses='data/diagnoses.csv', transform=None):
+        self.path = path
         # Load and prepare labels
         self.labels_df = pd.read_csv(diagnoses)
 
@@ -58,7 +59,7 @@ class ECGDataset(Dataset):
             # Use the ID to make filepath
             ID = self.labels_df.iloc[idx].name
 
-            file_path = f'data/ecg/{ID}.csv'
+            file_path = f'{self.path}/{ID}.csv'
             
             # Load ECG data
             df = pd.read_csv(file_path)

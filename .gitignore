@@ -15,3 +15,4 @@ wheels/
 
 # Virtual environments
 .venv
+.devcontainer
