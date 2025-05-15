@@ -1,15 +1,4 @@
-import re
-import os 
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import torch
 import torch.nn as nn
-from torch.utils.data import Dataset, DataLoader, random_split
-import torch.nn.functional as F
-from torchmetrics import F1Score
-from sklearn.metrics import multilabel_confusion_matrix, precision_score, recall_score, f1_score
-import seaborn as sns
 
 class ECGTransformer(nn.Module):
     def __init__(self, d_model, num_classes=63, nhead=8, num_encoder_layers=2, dim_feedforward=2048):

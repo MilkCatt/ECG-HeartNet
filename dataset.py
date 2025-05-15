@@ -1,15 +1,7 @@
-import re
-import os 
-import numpy as np
+# Dependencies
 import pandas as pd
-import matplotlib.pyplot as plt
 import torch
-import torch.nn as nn
-from torch.utils.data import Dataset, DataLoader, random_split
-import torch.nn.functional as F
-from torchmetrics import F1Score
-from sklearn.metrics import multilabel_confusion_matrix, precision_score, recall_score, f1_score
-import seaborn as sns
+from torch.utils.data import Dataset
 
 class NormalizeECG:
     def __call__(self, tensor):

@@ -1,14 +1,8 @@
-import re
-import os 
+# Dependencies
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
 import torch
-import torch.nn as nn
-from torch.utils.data import Dataset, DataLoader, random_split
-import torch.nn.functional as F
-from torchmetrics import F1Score
-from sklearn.metrics import multilabel_confusion_matrix, precision_score, recall_score, f1_score
+from sklearn.metrics import multilabel_confusion_matrix, f1_score
 import seaborn as sns
 
 def count_parameters(model):
